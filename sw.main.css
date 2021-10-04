@@ -1,0 +1,9 @@
+#time{
+  font-size: 30px;
+  text-align: left;
+  
+}
+.stopwatch-ctrl{
+position:absolute;
+top:130px;
+}

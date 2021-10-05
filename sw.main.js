@@ -1,5 +1,5 @@
 
-var timerAreaFirst = document.getElementById("time");
+let timerAreaFirst = document.getElementById("time");
 timerAreaFirst.innerHTML = "0:0:0:0"
  
 
@@ -49,7 +49,7 @@ function formatTime(time){
 
 stopButton.disabled = true; resetButton.disabled = true;
   
-// スタート
+
 startButton.addEventListener("click", function() {
 
 startButton.disabled = true; 
@@ -57,7 +57,7 @@ stopButton.disabled = false;
 resetButton.disabled = false; 
   });
 
-// ストップ
+
 stopButton.addEventListener("click", function() {
 time+= 100; formatTime() 
 startButton.disabled = false; 
@@ -65,7 +65,7 @@ stopButton.disabled = true;
 resetButton.disabled = false; 
 });
 
-// リセット
+
 resetButton.addEventListener("click", function() {
 clearInterval(setInterval); 
 time = 0; 
